@@ -1,0 +1,4 @@
+<launch>
+        <node name="localizer" pkg="lab3" type="grid_localization.py" args="$(find lab3)" output="screen" />
+	<node pkg="rviz" type="rviz" name="rviz" args="-d $(find lab3)/launch/default.rviz"/>
+</launch>
